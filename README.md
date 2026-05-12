@@ -2,33 +2,21 @@
 
 A drop-in icon library: **1,700+ [Lucide](https://lucide.dev/) icons** searchable by tag inside Obsidian, draggable straight onto an [Excalidraw](https://github.com/zsviczian/obsidian-excalidraw-plugin) canvas.
 
-![The library inside Obsidian](screenshots/01-library.png)
-
-![Lucide icons in an Excalidraw drawing](screenshots/02-excalidraw.png)
+## How to use
+https://github.com/user-attachments/assets/6b13f9e4-15fe-4a84-a991-06048035ebb6
 
 ## Requirements
 
 - [Obsidian](https://obsidian.md/) v1.9 or later (the Bases feature ships with v1.9).
 - The [Excalidraw community plugin](https://github.com/zsviczian/obsidian-excalidraw-plugin) installed and enabled.
 
-## Install (under a minute)
+## Install in under a minute
 
 1. **Download** `lucide-for-obsidian-excalidraw.zip` from the [latest release](../../releases/latest).
 2. **Unzip into your vault root.** You'll see `Assets/icons/lucide/` and `lucide-icons.base` appear.
-3. Open `lucide-icons.base` in Obsidian, switch to **Visual browser** view. (No reload needed; Obsidian picks up new files automatically.)
+3. Open `lucide-icons.base` in Obsidian, switch to **Visual browser** view. (No reload needed; Obsidian picks up new files automatically.)s
 
 That's it.
-
-## How to use
-
-<!-- VIDEO PLACEHOLDER: drop the github user-attachments URL on the line below -->
-<!-- https://github.com/user-attachments/assets/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -->
-
-| What you want | How |
-| ------------- | --- |
-| Find an icon | Open `lucide-icons.base`, type any tag in the search bar: `arrow`, `chart`, `residence`, `notification`, ... |
-| Add it to your drawing | **Shift-drag** the SVG from the Base (or file tree) onto the Excalidraw canvas. Add **Alt** to insert at 1:1 size. |
-| Recolor or edit strokes | Right-click the image element in Excalidraw -> **Convert SVG to Excalidraw elements**. Now you can edit colors and individual strokes. |
 
 ## Why this exists
 
