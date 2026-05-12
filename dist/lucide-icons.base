@@ -1,0 +1,27 @@
+filters:
+  and:
+    - file.inFolder("Assets/icons/lucide")
+    - file.ext == "svg"
+formulas:
+  icon: file.name.split(" - ")[0]
+  keywords: file.name.split(" - ")[1]
+  thumb: image(file.path)
+views:
+  - type: table
+    name: All Lucide icons
+    order:
+      - formula.icon
+      - formula.keywords
+    sort:
+      - property: formula.keywords
+        direction: ASC
+      - property: formula.icon
+        direction: DESC
+  - type: cards
+    name: Visual browser
+    order:
+      - file.basename
+    image: formula.thumb
+    imageFit: contain
+    imageAspectRatio: 1
+    cardSize: 120
