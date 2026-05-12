@@ -6,6 +6,11 @@ A drop-in icon library: **1,700+ [Lucide](https://lucide.dev/) icons** searchabl
 
 ![Lucide icons in an Excalidraw drawing](screenshots/02-excalidraw.png)
 
+## Requirements
+
+- [Obsidian](https://obsidian.md/) v1.9 or later (the Bases feature ships with v1.9).
+- The [Excalidraw community plugin](https://github.com/zsviczian/obsidian-excalidraw-plugin) installed and enabled.
+
 ## Install (under a minute)
 
 1. **Download** `lucide-for-obsidian-excalidraw.zip` from the [latest release](../../releases/latest).
@@ -14,7 +19,10 @@ A drop-in icon library: **1,700+ [Lucide](https://lucide.dev/) icons** searchabl
 
 That's it.
 
-## Use
+## How to use
+
+<!-- VIDEO PLACEHOLDER: drop the github user-attachments URL on the line below -->
+<!-- https://github.com/user-attachments/assets/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -->
 
 | What you want | How |
 | ------------- | --- |
