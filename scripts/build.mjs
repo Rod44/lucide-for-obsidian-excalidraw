@@ -70,8 +70,9 @@ for (const stem of stems) {
   }
 
   const name = sanitize(stem);
-  // macOS caps filenames at 255 bytes. Reserve room for " - " + ".svg" + safety.
-  const MAX_KW_LEN = 255 - name.length - " - ".length - ".svg".length - 5;
+  // BSD sed on macOS chokes on filenames above ~240 chars even though the FS
+  // accepts longer. Cap conservatively so every downstream tool works.
+  const MAX_KW_LEN = 200 - name.length - " - ".length - ".svg".length;
   let kwStr = "";
   for (const kw of keywords) {
     const candidate = kwStr ? `${kwStr} ${kw}` : kw;
@@ -80,8 +81,15 @@ for (const stem of stems) {
   }
 
   const filename = kwStr ? `${name} - ${kwStr}.svg` : `${name}.svg`;
-  // currentColor would render invisible on themed backgrounds.
-  const out = svg.replace(/stroke="currentColor"/g, 'stroke="#000"');
+  // Tweak the SVG before writing:
+  // - currentColor would render invisible on themed backgrounds, lock to black
+  // - bump intrinsic width/height from 24 to 96 so default drag-drop into
+  //   Excalidraw inserts a usefully-sized icon. The viewBox stays at 24, so
+  //   strokes scale uniformly.
+  const out = svg
+    .replace(/stroke="currentColor"/g, 'stroke="#000"')
+    .replace(/width="24"/, 'width="96"')
+    .replace(/height="24"/, 'height="96"');
   await fs.writeFile(path.join(DST, filename), out);
   written++;
 }
