@@ -12,9 +12,15 @@ https://github.com/user-attachments/assets/6b13f9e4-15fe-4a84-a991-06048035ebb6
 
 ## Install in under a minute
 
-1. **Download** `lucide-for-obsidian-excalidraw.zip` from the [latest release](../../releases/latest).
-2. **Unzip into your vault root.** You'll see `Assets/icons/lucide/` and `lucide-icons.base` appear.
-3. Open `lucide-icons.base` in Obsidian, switch to **Visual browser** view. (No reload needed; Obsidian picks up new files automatically.)s
+1. Go to the [latest release](../../releases/latest) and download the asset named **`lucide-for-obsidian-excalidraw.zip`** (NOT the "Source code" zip).
+2. **Unzip it, then move its contents (`Assets/` and `lucide-icons.base`) into your vault root.** They must sit *directly* at the vault root, not inside a wrapper folder. macOS Finder will create a `lucide-for-obsidian-excalidraw/` folder when you double-click the zip; open it, then drag everything inside up to your vault root.
+3. Open `lucide-icons.base` in Obsidian, switch to **Visual browser** view. (No reload needed; Obsidian picks up new files automatically.)
+
+Terminal one-liner that handles steps 1-2 cleanly (run from your vault root):
+
+```bash
+curl -L https://github.com/Rod44/lucide-for-obsidian-excalidraw/releases/latest/download/lucide-for-obsidian-excalidraw.zip -o /tmp/lucide.zip && unzip -o /tmp/lucide.zip -d .
+```
 
 That's it.
 
