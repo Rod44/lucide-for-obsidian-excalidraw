@@ -10,7 +10,7 @@ A drop-in icon library: **1,700+ [Lucide](https://lucide.dev/) icons** searchabl
 
 1. **Download** `lucide-for-obsidian-excalidraw.zip` from the [latest release](../../releases/latest).
 2. **Unzip into your vault root.** You'll see `Assets/icons/lucide/` and `lucide-icons.base` appear.
-3. **Reload Obsidian** (`Cmd/Ctrl+R`), open `lucide-icons.base`, switch to **Visual browser** view.
+3. Open `lucide-icons.base` in Obsidian, switch to **Visual browser** view. (No reload needed; Obsidian picks up new files automatically.)
 
 That's it.
 
